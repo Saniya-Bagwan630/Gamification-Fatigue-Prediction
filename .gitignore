@@ -1,0 +1,44 @@
+cd ~/Desktop/Fatigue_Predictor/Gamification_fatigue_model
+
+# Create .gitignore file
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+models/*.joblib
+outputs/
+*.log
+.DS_Store
+
+# Streamlit
+.streamlit/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+desktop.ini
+EOF
